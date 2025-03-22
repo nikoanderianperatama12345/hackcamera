@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peringatan Enkripsi Wajah</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .warning {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffcc00;
+            color: #333;
+            border: 2px solid #ff9900;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <video id="video" autoplay muted>
+        <source src="niko.mp4" type="video/mp4"> <!-- Ganti dengan nama file video Anda -->
+        Browser Anda tidak mendukung video.
+    </video>
+    <div class="warning">
+        ⚠️ Peringatan: Wajah Anda telah ternkripsi 📵👨‍💻
+    </div>
+    <img src="niko.png" alt="Foto Pembuat" id="creatorPhoto"> <!-- Ganti dengan nama file foto Anda -->
+
+    <script>
+        // Jika Anda ingin menambahkan fungsionalitas lain, Anda bisa menambahkannya di sini
+    </script>
+
+</body>
+</html>
